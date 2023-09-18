@@ -5,6 +5,7 @@ body{
 }
 #cabecera
 {
+    background: #333;
     color: aqua;
     font-family: cursive;
 }
