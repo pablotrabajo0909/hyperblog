@@ -1,0 +1,11 @@
+body{
+    color: deeppink;
+    text-align: center;
+    font-family: "arial";
+}
+#cabecera
+{
+    background: #333;
+    color: aqua;
+    font-family: cursive;
+}
