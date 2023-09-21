@@ -1,0 +1,80 @@
+Comandos de git
+git es un sistema de control de versiones 
+git init espar inicializar a git en el repositorio, una vez instalado 
+git add es agregar el documento o archivo para el cual quieres conservar o guardar los cambios que le has echo 
+git commit -m "version 1"  envia los ultimos datos del archivo para controlar los cmbios que se le hisieron (-m "version1" es para agregar una etiqueta y saber desde cuando se hisiseron)
+git add . es para aguardar todos los cambios que hayas echo desde la carpeta donde estas o ubicacion.
+git push es eviar a un repositorio 
+git pull es traer los cambios generado desde el repositorio 
+git log Nombre del archivo es traer todo el historial del archivo 
+git show es ver el historial
+Pwd muestra ubicación de carpeta 
+Cd para navegar a una carpeta 
+Ls listar las carpetas o archivos donde estas 
+Ls -al muestra los archivos ocultos
+Clear limpiar la consola o control L
+Para salir de una carpeta solo puede ser cd ..
+Ejemplo de como entrar a una carpeta como cd user
+Para crear carpetas es mkdir “nombreDelaCarpeta”
+Para crear un archivo basio que no tiene nada touch “nombreDELAcarpeta”
+Comando cat muestra el mensaje o información que tiene el archivo (cat+tab) = resultado de archivo 
+History muestra toda la historia de comando escrita
+¡72 es un ejemplo del numero de comando en el cual esta el comando y solo con poner el signo de admiración y el numero en el cual esta el comando se puede repetir dicho comando.
+Para borrar los archivos es rm junto con el nombre del archivo (rm “nombreDelArchivo”).
+Para ayuda de comandos es rm—help
+Git rm –cached es como si el archivo que se esta utilizando es como si se hubiera borrado pero en realidad solo esta en la ram esperando para saber que es lo que se tiene que hacer 
+Con el comando git add lo vuelves a traer. 
+Git config es par saber todas las configuraciones que tiene git 
+Git –list es para poder ver la configuración por defecto de git y que es lo que le falta 
+Git config – list  -- show es para saber donde están las configuraciones guardadas 
+Doble guion en git es usar una palabra 
+Git config --global user.name (nombreDeUsuario)
+Git config --global email (cambias email)
+Git status es checar lo que se ha hecho 
+Git reset nos permite volver a una versión anterior 
+Git log –stat ves de manera detallada los cambios que se han hecho 
+Git checkout es para ver el archivo anterior 
+El comando git reset es una herramienta poderosa que te permite deshacer o revertir cambios en tu repositorio de Git. Lo puedes ejecutar de tres maneras diferentes, con las líneas de comando --soft, --mixed y --hard.
+Pero no como git checkout que nos deja ir, mirar, pasear y volver. Con git reset volvemos al pasado sin la posibilidad de volver al futuro. Borramos la historia y la debemos sobreescribir. No hay vuelta atrás.
+Variaciones de Git Reset
+git reset --soft: Borra el historial y los registros de Git de commits anteriores, pero guarda los cambios en Staging para aplicar las últimas actualizaciones a un nuevo commit.
+git reset --hard: Deshace todo, absolutamente todo. Toda la información de los commits y del área de staging se elimina del historial.
+git reset --mixed: Borra todo, exactamente todo. Toda la información de los commits y del área de staging se elimina del historial.
+git reset HEAD: El comando git reset saca archivos del área de staging sin borrarlos ni realizar otras acciones. Esto impide que los últimos cambios en estos archivos se envíen al último commit. Podemos incluirlos de nuevo en staging con git add si cambiamos de opinión.
+Variaciones de Git rm
+git rm --cached: Elimina archivos del repositorio local y del área de staging, pero los mantiene en el disco duro. Deja de trackear el historial de cambios de estos archivos, por lo que quedan en estado untracked.
+git rm --force: Elimina los archivos de Git y del disco duro. Git guarda todo, por lo que podemos recuperar archivos eliminados si es necesario (empleando comandos avanzados).
+Git commit am comando donde funciona solo en archivos que ya se hayan guardao anteriormente 
+Para una nueva rama en git tenemos que ocupar el comando git Branch “cabecera”
+Para fucionar lo que esna rama con la master es utilizando un merge (git merge cabecera) estando en la rama master.
+Esto es par crear una llave en git  $ ssh-keygen -t rsa -b 4096 -C pablotrabajo038@gmail.com
+Revisar que el servidor de llaves este prendido eval $(ssh-agent -s)
+Egregamos la llave ~
+
+git remote add origin https://github.com/pablotrabajo0909/hyperblog.git agregamos al repositorio
+
+git remote -v ves dos url en donde podrás hacer un fech(que es traer cosas) y push (donde enviar cosas)
+
+para migrar un proyecto en el cual y tengas lo puedes hacer con el comando git Branch -m main
+
+para hacer un push es git push origin main 
+
+como a mi me quedo ya en el subir mis archivos en el repositorio fue de la siguiente manera git push origin master con ese como mando se creo el Branch y de esa forma pude conseguirlo 
+
+pero en caso de tener un error de no querer fucionar las histias con el readmi se utiliza el siguiente comando  git pull origin master --allow-unrelated-histories
+
+
+si en este caso alguien cambio algo en tu repositorio te podrás dar cuenta haciendo un pull y git te traerá el archivo ya modificado para que puedas ver donde exactamente se cambio git pull origin master
+
+para crear un alias con este comando y sirve para ver con exactitud los commit que hayas echo  alias arbolito="git log --all --graph --decorate --oneline"
+
+para crear un tag es git tag -a v0.1 -m “mi primer tag” (commit).
+
+Git tag ver los tags que tienes 
+
+Git tag -d “nombre del tag” 
+
+Esta sintaxix solo borra la referencia de donde esta en gitgub git tag push origin: refs/tags/ “nombre del tag”
+
+Forks o Bifurcaciones
+Es una característica única de GitHub en la que se crea una copia exacta del estado actual de un repositorio directamente en GitHub, éste repositorio podrá servir como otro origen y se podrá clonar (como cualquier otro repositorio), en pocas palabras, lo podremos utilizar como un git cualquiera
